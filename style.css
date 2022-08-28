@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Maze&display=swap');
+
+*
+{
+    padding:0;
+    margin: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+/* navbar codding */
+.nav_bar
+{
+    width: 100vw;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-style: bold;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+.logo h1 
+{
+    color: orangered;
+}
+.logo h1 img
+{
+    border: orange;
+    background-color: orange;
+    border-radius: 100%;
+    align-self: center;
+    /* margin-right: 20px; */
+}
+.logo h1 span
+{
+    color: orangered;
+    float: left;
+    border: 2px solid;
+    display: none;
+}
+.menu
+{
+    min-width: 70%;
+    align-items: center;
+    color: orange;
+}
+.menu ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;    
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li
+{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: 500;
+}
+.menu ul li:nth-child(1)
+{
+    background-color: orangered;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.menu ul li:hover
+{
+    background-color: orangered;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media screen and (max-width:650px){
+
+    .nav_bar
+    {
+        flex-direction: column;
+    }
+    .logo h1 
+    {
+        text-align: center;
+    }
+    .menu
+    {
+        width: 100%;
+        /* padding: 0px; */
+        /* margin: 0px; */
+        justify-content: space-around;
+    }
+    
+}
+@media screen and (max-width:500px){
+
+    .menu
+    {
+       display: none;
+    }
+    .logo h1 span
+    {
+        display: block;
+    }
+    .menu ul
+    {
+        margin-top: 5px;
+        display:inline;
+        text-align: center;
+    }
+    .menu ul li:nth-child(1)
+    {
+        background-color:orange;
+    }
+    .menu ul li:hover
+    {
+        margin-bottom: 3px;;
+        margin-top: 3px;;
+    }
+    
+}
+
+
+/* main container */
+.main_container
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/HjH5lgeHeix7kfhup/videoblocks-focused-caucasian-boy-writing-in-textbook-and-looking-at-laptop-screen-portrait-of-concentrated-college-student-in-eyeglasses-studying-online-education-concept-e-learning_sfo1zyk3i_thumbnail-1080_01.png");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containt
+{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+.text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: orange;
+    text-align: center;
+}
+.text button
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    color:black;
+    width: 200px;
+    font-style: bold;
+    font-weight: 700;
+    background-color: red;
+}
+.text button:hover
+{
+    background-color: orange;
+    color: white;
+}
+.container-body
+{
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+}
+.container-body div
+{
+   padding: 30px;
+}
+.container-body p
+{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: 0.2ex;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik Maze', cursive;
+}
+.container-body span
+{
+    font-style: bold;
+    color: orange;
+    text-align: center;
+    font-size:1em;
+}
+.icon 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon i
+{
+    background-color: orange; 
+    font-size:2em;
+    padding:1em;
+    border-radius: 100%;
+}
+
+@media screen and (max-width:780px) {
+    .icon i
+    {
+        font-size:1em;
+        padding:1em;
+    }
+}
+@media screen and (max-width:500px) {
+    .icon i
+    {
+        font-size:1em;
+        padding:0.5em;
+    }
+}
+@media screen and (min-width:501px) {
+    .menu
+    {
+       display: block;
+    }
+}
+
+.outer_class
+{
+    width: 100vw;
+    background-color: black;
+}
+.imges
+{
+   padding: 1em;
+   width:100%;
+   display: flex;
+   justify-content: center;
+}
+.imges img
+{
+    width: 50%;
+    box-shadow: 0px 0px 10px orange;
+    border-radius: 10px;
+}
+.imges p
+{
+    width: 50%;
+    color: orange;
+    font-weight: 700;
+}
+
+footer
+{
+    padding: 10px;
+    width: 100vw;
+    color: orange;
+    text-align: center;
+    background-color:black;
+}
+footer p
+{
+    font-weight: 700;
+    text-align: center;
+}
+footer p span
+{
+    color: orangered;
+    text-align: center;
+}
+.hobies
+{
+    width: 100vw;
+    height: auto;
+}
+.hobies div
+{
+    width: 100%;
+    color: black;
+    padding: 2rem;
+}
+.hobies div h3
+{
+    text-align: center;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Rubik Maze', cursive;
+    font-weight: 700;
+}
+.imges1
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    /* background-color: orange;margin: 0px; */
+}
+.imges1 img
+{
+    box-shadow: 0px 0px 10px orange;
+    width: 20vw;
+    /* margin-left: 2rem; */
+}
+@media screen and (max-width:800px){
+    .imges1
+    {
+        /* background-color: black; */
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .imges1 img
+    {
+        width:200px;
+        height: 300px;
+        margin: 1rem 2rem;
+    }
+}
+
